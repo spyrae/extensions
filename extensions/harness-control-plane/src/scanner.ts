@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import { homedir } from "os";
+import { getPreferenceValues } from "@raycast/api";
 import { Asset, Provider, ScanResult } from "./types";
 
 const HOME = homedir();
@@ -170,16 +171,12 @@ export function scan(): ScanResult {
   const rules: Asset[] = [];
 
   const claudeDir = join(HOME, ".claude");
-  const projectRoot = process.cwd();
+  const prefs = getPreferenceValues<{ projectPath?: string }>();
+  const projectRoot = prefs.projectPath || HOME;
 
   // 1. Claude Code
   skills.push(
-    ...scanMdAssets(
-      join(claudeDir, "commands"),
-      "skill",
-      ["claude", "codex", "gemini"],
-      "claude",
-    ),
+    ...scanMdAssets(join(claudeDir, "commands"), "skill", ["claude"], "claude"),
   );
   agents.push(
     ...scanMdAssets(join(claudeDir, "agents"), "agent", ["claude"], "claude"),
