@@ -8,6 +8,16 @@
     "Developer Tools"
   ],
   "license": "MIT",
+  "preferences": [
+    {
+      "name": "projectPath",
+      "type": "directory",
+      "required": false,
+      "title": "Project Directory",
+      "description": "Path to your project for scanning project-level config files (.cursor/rules, .windsurf/rules, AGENTS.md, CLAUDE.md, etc.)",
+      "placeholder": "~/Projects/my-app"
+    }
+  ],
   "commands": [
     {
       "name": "search-ecosystem",
