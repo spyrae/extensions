@@ -1,6 +1,6 @@
 # Harness Control Plane Changelog
 
-## {PR_MERGE_DATE} Initial Release
+## [Initial Release] - {PR_MERGE_DATE}
 
 - Search and browse all AI coding assets across 7 providers
 - MCP Servers view with transport grouping
