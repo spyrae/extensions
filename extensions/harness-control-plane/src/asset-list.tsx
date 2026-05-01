@@ -87,7 +87,7 @@ function AssetItem({ asset, idx }: { asset: Asset; idx: number }) {
           <Action.CopyToClipboard
             title="Copy Name"
             content={asset.name}
-            shortcut={{ modifiers: ["cmd"], key: "c" }}
+            shortcut={{ modifiers: ["cmd", "opt"], key: "c" }}
           />
           <Action.ShowInFinder
             path={asset.filePath}
