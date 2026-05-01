@@ -75,14 +75,6 @@ export const PROVIDERS: Record<Provider, ProviderInfo> = {
   },
 };
 
-export const TYPE_ICONS: Record<AssetType, string> = {
-  skill: "command-icon.png",
-  agent: "agent-icon.png",
-  mcp: "server-icon.png",
-  instruction: "doc-icon.png",
-  rule: "rule-icon.png",
-};
-
 export const TYPE_LABELS: Record<AssetType, string> = {
   skill: "Skill",
   agent: "Agent",
