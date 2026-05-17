@@ -110,11 +110,9 @@ export default function AssetList({
   placeholder,
   groupByTransport,
 }: AssetListProps) {
-  const { data, isLoading } = useCachedPromise(
-    async () => scan(),
-    [],
-    { keepPreviousData: true },
-  );
+  const { data, isLoading } = useCachedPromise(async () => scan(), [], {
+    keepPreviousData: true,
+  });
 
   const types = filter
     ? Array.isArray(filter)
