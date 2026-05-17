@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "harness-control-plane",
-  "title": "Harness Control Plane",
-  "description": "Interactive map of your AI coding ecosystem — skills, agents, MCP servers, rules across Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Copilot",
+  "name": "ai-coding-ecosystem",
+  "title": "AI Coding Ecosystem",
+  "description": "Unified map of your AI coding config — skills, agents, MCP servers, rules across Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Copilot",
   "icon": "extension-icon.png",
   "author": "spyrae",
   "categories": [
@@ -23,35 +23,21 @@
     {
       "name": "search-ecosystem",
       "title": "Search Ecosystem",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "AI Coding Ecosystem",
       "description": "Search and browse all AI coding assets — skills, agents, MCP servers, rules, and instructions",
-      "mode": "view"
-    },
-    {
-      "name": "skills",
-      "title": "Skills",
-      "subtitle": "Harness Control Plane",
-      "description": "Browse slash commands and skills across Claude Code, Codex, and Gemini CLI",
       "mode": "view"
     },
     {
       "name": "agents",
       "title": "Agents",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "AI Coding Ecosystem",
       "description": "Browse subagent definitions configured in your AI coding tools",
-      "mode": "view"
-    },
-    {
-      "name": "mcp-servers",
-      "title": "MCP Servers",
-      "subtitle": "Harness Control Plane",
-      "description": "View all configured MCP servers across AI coding tools",
       "mode": "view"
     },
     {
       "name": "rules",
       "title": "Rules",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "AI Coding Ecosystem",
       "description": "Browse rules configured in Claude Code, Cursor, and Windsurf",
       "mode": "view"
     }

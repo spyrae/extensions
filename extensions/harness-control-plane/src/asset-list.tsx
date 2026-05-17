@@ -111,7 +111,7 @@ export default function AssetList({
   groupByTransport,
 }: AssetListProps) {
   const { data, isLoading } = useCachedPromise(
-    () => Promise.resolve(scan()),
+    async () => scan(),
     [],
     { keepPreviousData: true },
   );

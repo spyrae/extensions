@@ -34,15 +34,19 @@ function parseFrontmatter(content: string): Record<string, string> {
 }
 
 function extractFirstLine(content: string): string {
-  let inFrontmatter = false;
-  for (const line of content.split("\n")) {
-    if (line.trim() === "---") {
-      inFrontmatter = !inFrontmatter;
-      continue;
-    }
-    if (inFrontmatter) continue;
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith("#")) continue;
+  const lines = content.split("\n");
+  let i = 0;
+
+  // Skip frontmatter only if the very first line is "---"
+  if (lines[0]?.trim() === "---") {
+    i = 1;
+    while (i < lines.length && lines[i].trim() !== "---") i++;
+    i++; // skip closing ---
+  }
+
+  for (; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
+    if (!trimmed || trimmed === "---" || trimmed.startsWith("#")) continue;
     return trimmed.substring(0, 200);
   }
   return "";
