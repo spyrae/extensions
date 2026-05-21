@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "harness-control-plane",
-  "title": "Harness Control Plane",
+  "name": "agent-ecosystem-map",
+  "title": "Agent Ecosystem Map",
   "description": "Unified map of your AI coding config — skills, agents, MCP servers, rules across Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Copilot",
   "icon": "extension-icon.png",
   "author": "spyrae",
@@ -23,21 +23,21 @@
     {
       "name": "search-ecosystem",
       "title": "Search Ecosystem",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "Agent Ecosystem Map",
       "description": "Search and browse all AI coding assets — skills, agents, MCP servers, rules, and instructions",
       "mode": "view"
     },
     {
       "name": "agents",
       "title": "Agents",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "Agent Ecosystem Map",
       "description": "Browse subagent definitions configured in your AI coding tools",
       "mode": "view"
     },
     {
       "name": "rules",
       "title": "Rules",
-      "subtitle": "Harness Control Plane",
+      "subtitle": "Agent Ecosystem Map",
       "description": "Browse rules configured in Claude Code, Cursor, and Windsurf",
       "mode": "view"
     }

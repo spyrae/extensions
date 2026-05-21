@@ -1,4 +1,4 @@
-# Harness Control Plane Changelog
+# Agent Ecosystem Map Changelog
 
 ## [Initial Release] - {PR_MERGE_DATE}
 
