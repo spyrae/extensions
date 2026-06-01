@@ -1,6 +1,6 @@
 # Agent Ecosystem Map Changelog
 
-## [Initial Release] - {PR_MERGE_DATE}
+## [Initial Release] - 2026-06-01
 
 - Search and browse all AI coding assets across 7 providers
 - MCP Servers view with transport grouping
