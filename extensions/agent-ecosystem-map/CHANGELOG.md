@@ -1,6 +1,6 @@
 # Agent Ecosystem Map Changelog
 
-## [Brand alignment] - {PR_MERGE_DATE}
+## [Brand alignment] - 2026-06-11
 
 - Updated the extension icon to the Agent Ecosystem Map polygon mark
 - Refreshed Marketplace screenshots to use the Agent Ecosystem Map icon
